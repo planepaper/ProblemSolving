@@ -16,12 +16,13 @@ int main() {
     int numCounts; cin >> numCounts;
     for(int i = 0; i< numCounts; i++)
     {
-        int num; cin >> num;
-        int answer = num;
-        for(unsigned int j = num + 1; j <= 4000000000; j++)
+        unsigned int num; cin >> num;
+        unsigned int answer = num;
+
+        for(unsigned int j = num; ; j++)
         {
             bool isPrime = true;
-            for(unsigned int k = 2; k < j; k++)
+            for(unsigned int k = 2; k*k <= j; k++)
             {
                 if(j % k == 0)
                 {
@@ -36,6 +37,12 @@ int main() {
                 break;
             }
         }
+
+        if(num == 1 || num == 0)
+        {
+            answer = 2;
+        }
+
         cout << answer << '\n';
     }
 
