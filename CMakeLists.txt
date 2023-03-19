@@ -3,4 +3,4 @@ project(ProblemSolving)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(ProblemSolving src/stack/2504.cpp)
+add_executable(ProblemSolving src/greedy/1931.cpp)
