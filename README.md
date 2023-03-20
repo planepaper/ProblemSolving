@@ -1,5 +1,8 @@
 # ProblemSolving
 
+- 언제나 범위 조심.!
+- error test 충분히 잘하자.
+
 ## Check
 
 ### greedy
